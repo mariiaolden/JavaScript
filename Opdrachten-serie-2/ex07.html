@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <button id="validate" name="validate" onclick="makeChoice()">result</button>
+  <script type="text/javascript">
+
+    function makeChoice(){
+      let request = prompt("kies tussen 1, 2 of 3");
+
+    switch (request) {
+      case "1":
+        alert("1. Thank you");
+        break;
+        case "2":
+        alert("2. Hello");
+        break;
+        case "3":
+        alert("3. Good bye");
+        break;
+      default:
+        alert( "Excuse me, what do you want?");
+    }
+  };
+  </script>
+  </body>
+</html>

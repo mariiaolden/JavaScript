@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+  <script type="text/javascript">
+  let Sword={
+     title:"Honor",
+     physic : 420,
+     magic : 20,
+     minLevel : 15,
+     available : true
+ };
+ let Axe={
+     title:"Rush",
+     physic : 800,
+     magic : 0,
+     minLevel : 13,
+     available : false
+ };
+ let Sceptre={
+     title:"Magician",
+     physic : 20,
+     magic : 222,
+     minLevel : 8,
+     available : true
+ };
+ let arraysale=[Sword,Axe,Sceptre];
+ var showall = function showall() {
+     let answer="";
+     for (var i = 0; i < arraysale.length; i++) {
+         answer+=arraysale[i].title+" ";
+     }
+     return arraysale;
+ };
+ var showavailable = function showavailable() {
+     let answer="";
+     for (var i = 0; i < arraysale.length; i++) {
+         if (arraysale[i].available===true) {
+             answer+=arraysale[i].title+"  ";
+         }
+     }
+     return answer;
+ };
+ var showmin10 = function showmin10() {
+     let answer="";
+     for (var i = 0; i < arraysale.length; i++) {
+         if (arraysale[i].minLevel>=10) {
+             answer+=arraysale[i].title+"  ";
+         }
+     }
+     return answer;
+ };
+ console.log(showall()+"  &  "+showavailable()+"  &  "+showmin10());
+
+  </script>
+  </body>
+</html>

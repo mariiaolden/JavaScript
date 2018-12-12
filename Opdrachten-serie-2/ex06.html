@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <button id="validate" name="validate" onclick="display()">result</button>
+  <script type="text/javascript">
+    let tab = [-2,1,4];
+    function subtract(x){
+      if (x>=0){
+        alert("Getal positief");
+      }else{
+        alert("Negatief getal!");
+      }
+      return x-tab[0];
+
+    }
+    function display(){
+      alert(subtract(tab[0]));
+
+      alert(subtract(tab[tab.length-1]));
+    }
+  </script>
+  </body>
+</html>

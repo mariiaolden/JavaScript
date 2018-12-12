@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+      <p id="result"></p>
+    <button type="button" name="button" id="TemperatureConversion" onclick="calcBMI()">BMI</button>
+    <script type="text/javascript">
+      let calcBMI = function(){
+               let height=parseFloat(prompt("hoogte (meter)"));
+               let weight=parseFloat(prompt("gewicht (kg)"));
+               let message="";
+               let bmi=weight/Math.pow(height,2);
+               bmi=(parseInt(bmi*100))/100.0;
+               if (bmi<16.5) {
+                   message="ondervoeding of hongersnood";
+               } else if (bmi<18.5) {
+                   message="dunheid";
+               } else if (bmi<25) {
+                   message="normale bouw";
+               } else if (bmi<30) {
+                   message="overgewicht";
+               } else if (bmi<35) {
+                   message="matige overgewicht";
+               } else if (bmi<40) {
+                   message="ernstige overgewicht";
+               } else {
+                   message="morbide obesitas";
+               }
+               document.getElementById("result").innerHTML="bmi is "+bmi+" "+message;
+           };
+    </script>
+  </body>
+</html>

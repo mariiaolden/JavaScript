@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <button id="validate" name="validate" onclick="testWhile()">Validate</button>
+    <script type="text/javascript">
+      function testWhile () {
+      let request = prompt("give me a text with a p-letter");
+      while (!request.includes("p")) {
+        request = prompt("You are wrong");
+      };
+      alert(request);
+    };
+    </script>
+  </body>
+</html>

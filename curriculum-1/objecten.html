@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+  <script type="text/javascript">
+    let character={
+         name:"cheburashka",
+         age : 20,
+         items_to_give : ["oranges","singing","friendlooking","kind"],
+         giveItem : function(){
+             console.log(character.items_to_give[Math.floor(Math.random()*(character.items_to_give.length))]);
+         }
+     };
+     character.giveItem();
+  </script>
+  </body>
+</html>

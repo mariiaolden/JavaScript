@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p id="result"></p>
+        <button type="button" name="button" id="calcAverage" onclick="calcAverage()">calcAverage</button>
+        <script type="text/javascript">
+            let total=0;
+            let counter=0;
+            let avg=0;
+            let calcAverage = function(){
+                let gehgetal=prompt("geheel getal");
+                while (!Number.isInteger(parseInt(gehgetal))) {
+                    gehgetal=prompt("geheel getal");
+                }
+                gehgetal=parseInt(gehgetal);
+                if (gehgetal>=0) {
+                    total+=gehgetal;
+                    counter++;
+                    avg=total/counter;
+                }
+                document.getElementById("result").innerHTML="gemiddelde is "+avg+" uit "+counter+" aantal getallen.";
+            };
+        </script>
+  </body>
+</html>

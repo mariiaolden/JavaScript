@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form>
+           <label for="height">Height : </label><input type="text" id="height" name="height"/><br/>
+           <label for="birthdate">Birthdate : </label><input type="text" id="birthdate" name="birthdate"/><br/>
+           <button id="validate" name="validate" onclick="calc()">Validate</button>
+       </form>
+    <script type="text/javascript">
+  function calc(){
+    let result = 0;
+    let height = document.getElementById("height").value;
+    let age = document.getElementById("birthdate").value;
+
+      result = ((((height*2) + 5) * 50) - age) + 1766;
+      alert(result);
+    };
+    </script>
+
+  </body>
+</html>

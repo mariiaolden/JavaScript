@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form>
+           <label for="firstNumber">First number : </label><input type="text" id="firstNumber" name="firstNumber"/><br/>
+           <label for="secondNumber">Last number : </label><input type="text" id="secondNumber" name="secondNumber"/><br/>
+           <button id="validate" name="validate" onclick="restdeling()">Validate</button>
+       </form>
+    <script type="text/javascript">
+      function restdeling(){
+        let firstNumber = document.getElementById("firstNumber").value;
+        let secondNumber = document.getElementById("secondNumber").value;
+
+        alert(firstNumber%secondNumber)
+      };
+
+    </script>
+  </body>
+</html>

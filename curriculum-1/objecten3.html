@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+  <script type="text/javascript">
+    let sword = {
+      name : "Knife",
+      damage : 50
+    };
+
+    let mainCharacter = {
+      name : "Bear",
+      level : 50,
+      life : 20,
+      weapon : sword,
+      attack : function (){
+       return mainCharacter.name + " aanval met het wapen "
+       + mainCharacter.weapon.name +". de schade is "
+       + (mainCharacter.level*mainCharacter.weapon.damage).toString();
+      }
+    };
+
+    console.log(mainCharacter.attack());
+  </script>
+  </body>
+</html>
