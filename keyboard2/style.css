@@ -1,0 +1,23 @@
+#up{
+  width: 200px;
+  height: 200px;
+  border: 2px solid #000;
+}
+#down{
+  width: 200px;
+  height: 200px;
+  border: 2px solid #000;
+}
+#left{
+  width: 200px;
+  height: 200px;
+  border: 2px solid #000;
+}
+#right{
+  width: 200px;
+  height: 200px;
+  border: 2px solid #000;
+}
+.highlight{
+  background-color: #002233; 
+}
