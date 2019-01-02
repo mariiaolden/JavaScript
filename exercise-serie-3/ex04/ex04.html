@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form>
+    <label for="name">Name  : </label>               <input type="text" name="name" value="Doe" id="name" />
+    <label for="firstName">First name  : </label>    <input type="text" name="firstName" value="John" id="firstName" />
+    <label for="city">City  : </label>               <input type="text" name="city" value="New York" id="city" />
+    <input type="reset" value="Reset" onclick="resetbutton()" />
+    <button type="button" name="button">Submit</button>
+  </form>
+  <script>
+    function resetbutton (){
+      name.setAttribute("value", "");
+      firstName.setAttribute("value", "");
+      city.setAttribute("value", "");
+    }
+let name = document.getElementById('name');
+let firstName = document.getElementById('firstName');
+let city = document.getElementById('city');
+
+
+</script>
+  </body>
+</html>
