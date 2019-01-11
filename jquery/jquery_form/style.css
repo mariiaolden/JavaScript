@@ -4,3 +4,6 @@
 .good {
    border: 1px solid green;
 }
+#mistake {
+    display: none;
+}
